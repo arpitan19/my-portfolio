@@ -1,0 +1,81 @@
+
+.container-title{
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+.container-title h1{
+  padding: 0px 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+.education-title {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.education {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .education-card {
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 2px 2px rgb(142, 136, 136);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .education-card .icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .education-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .education-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    color: #ddd;
+  }
+  @media screen and (max-width: 768px) {
+    .container-title{
+      text-align: start;
+      gap: 80px;
+      margin: 80px;
+      position: relative;
+    }
+    .container-title h1{
+      padding: 0px;
+      font-size: 40px;
+    }
+    .education-title{
+      padding: 0;
+      font-size: 40px;
+    }
+    .education {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .education-card {
+      width: 50%; 
+    }
+  }
+  
+  
